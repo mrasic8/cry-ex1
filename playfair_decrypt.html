@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Playfair Cipher - Decryption</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Playfair Cipher - Decryption</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="playfair_encrypt.html">Go to Encryption</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Decrypt Text using Playfair Cipher</h2>
+      <form id="playfair-decrypt-form">
+        <label for="playfair-decrypt-key">
+          Key (same key used for encryption; letters only; I and J are treated as the same):
+        </label>
+        <input type="text" id="playfair-decrypt-key" name="key" required />
+
+        <label for="playfair-ciphertext">
+          Ciphertext (letters A–Z; case-insensitive; non-letters are ignored):
+        </label>
+        <textarea id="playfair-ciphertext" name="ciphertext" required></textarea>
+
+        <button type="submit">Decrypt</button>
+      </form>
+
+      <div id="playfair-decrypt-error" class="error-message"></div>
+
+      <h3>Plaintext (lowercase):</h3>
+      <pre id="playfair-plain-output" class="output-box"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ciphertext is treated case-insensitively; plaintext output is lowercase. I and J are merged.</p>
+  </footer>
+
+  <script src="js/alphabet.js"></script>
+  <script src="js/playfairCipher.js"></script>
+  <script src="js/playfair_decrypt.js"></script>
+</body>
+</html>

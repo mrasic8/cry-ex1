@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hill - Determinant of Matrix</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Hill Cipher - Determinant of a Matrix</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Compute Determinant</h2>
+      <form id="hill-det-form">
+        <label for="hill-det-size">Matrix dimension n (n × n):</label>
+        <input type="number" id="hill-det-size" min="1" required />
+
+        <label for="hill-det-matrix">
+          Matrix elements (row-wise; separated by spaces or commas; use new lines for rows):
+        </label>
+        <textarea id="hill-det-matrix" required></textarea>
+
+        <button type="submit">Compute Determinant</button>
+      </form>
+
+      <div id="hill-det-error" class="error-message"></div>
+
+      <h3>Determinant (integer):</h3>
+      <pre id="hill-det-only-output" class="output-box"></pre>
+
+      <h3>Determinant mod 26:</h3>
+      <pre id="hill-det-only-mod-output" class="output-box"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>Used to test whether a key matrix is invertible modulo 26.</p>
+  </footer>
+
+  <script src="js/alphabet.js"></script>
+  <script src="js/hillMath.js"></script>
+  <script src="js/hill_determinant.js"></script>
+</body>
+</html>

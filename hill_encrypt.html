@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hill Cipher - Encryption</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Hill Cipher - Encryption</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="hill_decrypt.html">Go to Decryption</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Encrypt Text using Hill Cipher</h2>
+      <form id="hill-encrypt-form">
+        <label for="hill-encrypt-size">Matrix dimension n (n × n):</label>
+        <input type="number" id="hill-encrypt-size" min="1" required />
+
+        <label for="hill-encrypt-matrix">
+          Key matrix elements (row-wise; separated by spaces or commas; use new lines for rows):
+        </label>
+        <textarea id="hill-encrypt-matrix" required></textarea>
+
+        <label for="hill-plaintext">
+          Plaintext (letters A–Z, case-insensitive; non-letters are ignored):
+        </label>
+        <textarea id="hill-plaintext" required></textarea>
+
+        <button type="submit">Encrypt</button>
+      </form>
+
+      <div id="hill-encrypt-error" class="error-message"></div>
+
+      <h3>Ciphertext (UPPERCASE):</h3>
+      <pre id="hill-cipher-output" class="output-box"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>Plaintext is converted to lowercase internally; ciphertext is uppercase.</p>
+  </footer>
+
+  <script src="js/alphabet.js"></script>
+  <script src="js/hillMath.js"></script>
+  <script src="js/hillCipher.js"></script>
+  <script src="js/hill_encrypt.js"></script>
+</body>
+</html>

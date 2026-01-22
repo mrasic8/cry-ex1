@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hill - Transpose of Matrix</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Hill Cipher - Transpose of a Matrix</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Compute Transpose</h2>
+      <form id="hill-transpose-form">
+        <label for="hill-transpose-size">Matrix dimension n (n × n):</label>
+        <input type="number" id="hill-transpose-size" min="1" required />
+
+        <label for="hill-transpose-matrix">
+          Matrix elements (row-wise; separated by spaces or commas; use new lines for rows):
+        </label>
+        <textarea id="hill-transpose-matrix" required></textarea>
+
+        <button type="submit">Compute Transpose</button>
+      </form>
+
+      <div id="hill-transpose-error" class="error-message"></div>
+
+      <h3>Transpose matrix:</h3>
+      <pre id="hill-transpose-output" class="output-box"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>Transpose is used to form the adjugate matrix in inversion.</p>
+  </footer>
+
+  <script src="js/alphabet.js"></script>
+  <script src="js/hillMath.js"></script>
+  <script src="js/hill_transpose.js"></script>
+</body>
+</html>

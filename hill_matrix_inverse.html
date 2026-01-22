@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hill - Matrix Inverse & Determinant</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Hill Cipher - Matrix Inverse, Determinant & Cofactor</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Matrix Inverse (mod 26), Determinant, Cofactor</h2>
+      <form id="hill-matrix-inverse-form">
+        <label for="hill-size">Matrix dimension n (n × n):</label>
+        <input type="number" id="hill-size" min="1" required />
+
+        <label for="hill-matrix">
+          Matrix elements (row-wise; separated by spaces or commas; use new lines for rows):
+        </label>
+        <textarea id="hill-matrix" required></textarea>
+
+        <button type="submit">Compute</button>
+      </form>
+
+      <div id="hill-matrix-inverse-error" class="error-message"></div>
+
+      <h3>Determinant (integer):</h3>
+      <pre id="hill-det-output" class="output-box"></pre>
+
+      <h3>Determinant mod 26:</h3>
+      <pre id="hill-det-mod-output" class="output-box"></pre>
+
+      <h3>Inverse of determinant mod 26 (if exists):</h3>
+      <pre id="hill-det-inv-output" class="output-box"></pre>
+
+      <h3>Cofactor matrix (integer entries):</h3>
+      <pre id="hill-cofactor-output" class="output-box"></pre>
+
+      <h3>Inverse matrix mod 26 (if exists):</h3>
+      <pre id="hill-inverse-output" class="output-box"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>All matrix operations are performed over integers; inverses use modulo 26.</p>
+  </footer>
+
+  <script src="js/alphabet.js"></script>
+  <script src="js/hillMath.js"></script>
+  <script src="js/hill_matrix_inverse.js"></script>
+</body>
+</html>

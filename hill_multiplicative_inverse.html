@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hill - Multiplicative Inverse (mod 26)</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Hill Cipher - Multiplicative Inverse (mod 26)</h1>
+    <nav>
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Find Multiplicative Inverse modulo 26</h2>
+      <form id="hill-multinv-form">
+        <label for="hill-multinv-a">
+          Enter an integer a (to find inverse of a mod 26):
+        </label>
+        <input type="number" id="hill-multinv-a" required />
+
+        <button type="submit">Compute Inverse</button>
+      </form>
+
+      <div id="hill-multinv-error" class="error-message"></div>
+
+      <h3>GCD(a, 26):</h3>
+      <pre id="hill-multinv-gcd-output" class="output-box"></pre>
+
+      <h3>Multiplicative inverse of a mod 26 (if exists):</h3>
+      <pre id="hill-multinv-output" class="output-box"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>Computed using Euclidean and extended Euclidean algorithms.</p>
+  </footer>
+
+  <script src="js/alphabet.js"></script>
+  <script src="js/hillMath.js"></script>
+  <script src="js/hill_multiplicative_inverse.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shift Cipher - Decryption</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Shift Cipher - Decryption</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shift_encrypt.html">Go to Encryption</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Decrypt Text</h2>
+      <form id="shift-decrypt-form">
+        <label for="shift-ciphertext">Ciphertext (UPPERCASE preferred):</label>
+        <textarea id="shift-ciphertext" name="ciphertext" required></textarea>
+
+        <label for="shift-decrypt-key">Key (integer shift, e.g., 3):</label>
+        <input type="number" id="shift-decrypt-key" name="key" required />
+
+        <button type="submit">Decrypt</button>
+      </form>
+
+      <div id="shift-decrypt-error" class="error-message"></div>
+
+      <h3>Plaintext (lowercase):</h3>
+      <pre id="shift-plain-output" class="output-box"></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ciphertext is treated case-insensitively; plaintext output is lowercase.</p>
+  </footer>
+
+  <!-- Load shared libs first, then page logic -->
+  <script src="js/alphabet.js"></script>
+  <script src="js/shiftCipher.js"></script>
+  <script src="js/shift_decrypt.js"></script>
+</body>
+</html>

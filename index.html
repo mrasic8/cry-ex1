@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Classical Cryptography Lab</title>
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Classical Cryptography Lab</h1>
+  </header>
+
+  <main class="home-main">
+    <div class="cipher-container">
+      <!-- Shift Cipher Container -->
+      <section id="shift-cipher-section" class="cipher-card">
+        <h2>Shift Cipher (Caesar Cipher)</h2>
+        <p>Select an operation:</p>
+        <ul class="link-list">
+          <li><a href="shift_encrypt.html">Encrypt using Shift Cipher</a></li>
+          <li><a href="shift_decrypt.html">Decrypt using Shift Cipher</a></li>
+        </ul>
+      </section>
+
+      <!-- Hill Cipher Container -->
+      <section id="hill-cipher-section" class="cipher-card">
+        <h2>Hill Cipher</h2>
+        <p>Matrix tools and Hill cipher encryption/decryption:</p>
+        <ul class="link-list">
+          <li>
+            <a href="hill_matrix_inverse.html">
+              Matrix inverse, determinant, cofactor, and determinant inverse (mod 26)
+            </a>
+          </li>
+          <li>
+            <a href="hill_determinant.html">
+              Determinant of a matrix
+            </a>
+          </li>
+          <li>
+            <a href="hill_multiplicative_inverse.html">
+              Multiplicative inverse (mod 26) using Euclidean / Extended Euclidean
+            </a>
+          </li>
+          <li>
+            <a href="hill_encrypt.html">
+              Encrypt plaintext using Hill cipher and key matrix
+            </a>
+          </li>
+          <li>
+            <a href="hill_decrypt.html">
+              Decrypt ciphertext using Hill cipher and key matrix
+            </a>
+          </li>
+          <li>
+            <a href="hill_cofactor.html">
+              Cofactor matrix of a given matrix
+            </a>
+          </li>
+          <li>
+            <a href="hill_transpose.html">
+              Transpose of a matrix
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Playfair Cipher Container -->
+      <section id="playfair-cipher-section" class="cipher-card">
+        <h2>Playfair Cipher</h2>
+        <p>Encrypt and decrypt using a 5×5 Playfair key square:</p>
+        <ul class="link-list">
+          <li><a href="playfair_encrypt.html">Encrypt using Playfair Cipher</a></li>
+          <li><a href="playfair_decrypt.html">Decrypt using Playfair Cipher</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Alphabet is numbered from 0 to 25 using a shared library module.</p>
+  </footer>
+</body>
+</html>
