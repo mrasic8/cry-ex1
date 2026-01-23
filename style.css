@@ -24,14 +24,25 @@ header h1 {
 }
 
 nav a {
-  color: #ffeb3b;
+  display: inline-block;
+  color: #ffffff;
   margin-right: 1.1rem;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  padding: 0.45rem 1rem;
+  border: 2px solid #000;
+  border-radius: 5px;
+  background-color: transparent;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* Main content */
@@ -149,3 +160,4 @@ footer {
   color: #555;
   margin-bottom: 1.5rem;
 }
+
